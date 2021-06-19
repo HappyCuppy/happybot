@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@sapphire/framework": "^1.0.2",
+    "discord.js": "^12.5.3"
+  },
+  "name": "happybot",
+  "version": "0.0.1",
+  "description": "A custom bot for the HappyFace discord server",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HappyCuppy/happybot.git"
+  },
+  "keywords": [
+    "happycuppy",
+    "discord",
+    "server",
+    "bot"
+  ],
+  "author": "HappyCuppy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HappyCuppy/happybot/issues"
+  },
+  "homepage": "https://github.com/HappyCuppy/happybot#readme"
+}

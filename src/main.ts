@@ -1,0 +1,1 @@
+import { BOT_TOKEN, DEFAULT_PREFIX } from '../env-vars';

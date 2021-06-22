@@ -6,10 +6,15 @@
   "name": "happybot",
   "version": "0.0.1",
   "description": "A custom bot for the HappyFace discord server",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "src/main.ts",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/main.ts"
   },
   "repository": {
     "type": "git",

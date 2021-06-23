@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@sapphire/decorators": "^2.1.4",
     "@sapphire/framework": "^1.0.2",
     "discord.js": "^12.5.3"
   },
@@ -14,7 +15,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/main.ts"
+    "start": "ts-node src/main.ts",
+    "watch": "nodemon src/main.ts"
   },
   "repository": {
     "type": "git",

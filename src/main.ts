@@ -1,19 +1,17 @@
-import { BOT_TOKEN, DEFAULT_PREFIX } from '../env-vars';
-
-const { SapphireClient } = require('@sapphire/framework');
+import { SapphireClient } from '@sapphire/framework';
+import { DEFAULT_PREFIX } from '../env-vars';
 
 const client = new SapphireClient({
-  //defaultPrefix: DEFAULT_PREFIX
+  defaultPrefix: DEFAULT_PREFIX
 });
 
 const main = async () => {
 	try {
 		client.logger.info('Logging in');
-		await client.login(BOT_TOKEN);
+		await client.login();
 		client.logger.info('logged in');
 
-		console.log(client);
-		
+		console.log([...client.stores.get('commands')]);
 	} catch (error) {
 		client.logger.fatal(error);
 		client.destroy();

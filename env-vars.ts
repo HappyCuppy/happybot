@@ -1,7 +1,11 @@
-import dotenv from 'dotenv'
-dotenv.config();
+// Unless explicitly defined, set NODE_ENV as development:
+process.env.NODE_ENV ??= 'development';
 
-const BOT_TOKEN = process.env.DISCORD_AUTH2_TOKEN;
+import { config } from 'dotenv-cra';
+import { join } from 'path';
+
+config({ path: join(__dirname, '.env')});
+
 const DEFAULT_PREFIX = process.env.DEFAULT_PREFIX;
 
-export { BOT_TOKEN, DEFAULT_PREFIX };
+export { DEFAULT_PREFIX };
